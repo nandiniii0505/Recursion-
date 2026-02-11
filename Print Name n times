@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class PrintName {
+
+static void printName(String name, int n) {
+  if (n <= 0) {
+     return;
+        }
+System.out.println(name);
+printName(name, n - 1);
+    }
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+String name = sc.nextLine();
+System.out.print("Enter no of times: ");
+int n = sc.nextInt();
+
+ printName(name, n);
+    }
+}
